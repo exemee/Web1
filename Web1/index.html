@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web1</title>
+    <link rel="stylesheet" href="Static/css/Main.css">
+    <script src="Static/js/Script.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+       <td>
+           <div class="header">
+                <div id="headerText">
+                    Махнин Дмитрий
+                    <br>
+                    P3212
+                    <br>
+                    Вариант: 2318
+                </div>
+           </div>
+       </td>
+    </tr>
+
+    <tr>
+        <div class="taskPhoto" style="text-align: center">
+            <img src="Static/Img/task.png">
+        </div>
+        <td>
+            <div class="main">
+                <form action="Main.php" method="get" id="valueForm">
+
+                    <div class="xRect" id="xField">
+                    <span id="xValue">0</span>
+                        <input autocomplete="off" id="xEndValue" name="x" type="hidden" value=0>
+                        <table id="tableButton">
+                            <tr>
+                                <td>
+                                    <button class="buttonNumber" id="-2" name="x" onclick="document.getElementById('xValue').innerText = '-2'; document.getElementById('xEndValue').value = -2" type="button">-2
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="buttonNumber" id="-1.5" name="x" onclick="document.getElementById('xValue').innerText = '-1.5'; document.getElementById('xEndValue').value = -1.5" type="button">-1,5
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="buttonNumber" id="-1" name="x" onclick="document.getElementById('xValue').innerText = '-1'; document.getElementById('xEndValue').value = -1" type="button">-1
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="buttonNumber" id="-0.5" name="x" onclick="document.getElementById('xValue').innerText = '-0.5'; document.getElementById('xEndValue').value = -0.5" type="button">-0,5
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="buttonNumber" id="0" name="x" onclick="document.getElementById('xValue').innerText = '0'; document.getElementById('xEndValue').value = 0" type="button">0
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="buttonNumber" id="0.5" name="x" onclick="document.getElementById('xValue').innerText = '0.5'; document.getElementById('xEndValue').value = 0.5" type="button">0,5
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="buttonNumber" id="1" name="x" onclick="document.getElementById('xValue').innerText = '1'; document.getElementById('xEndValue').value = 1" type="button">1
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="buttonNumber" id="1.5" name="x" onclick="document.getElementById('xValue').innerText = '1.5'; document.getElementById('xEndValue').value = 1.5" type="button">1,5
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="buttonNumber" id="x" value="2" name="x" onclick="document.getElementById('xValue').innerText = '2'; document.getElementById('xEndValue').value = 2" type="button">2
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="yRect">
+                        <span>Y</span>
+                        <input autocomplete="off" autofocus required
+                               class="input" id="y" onchange="checkYData()" onkeyup="checkYData()" maxlength="8" name="y" placeholder="Введите число от -3 до 3" style="border: 2px solid #d0d1c7;"
+                               title="Введите число" type="text">
+                    </div>
+                    <div class="rRect">
+                        <div class="selectContainer" >
+                            <select id="select" name="select">
+                                <option value="1">1</option>
+                                <option value="1.5">1.5</option>
+                                <option value="2">2</option>
+                                <option value="2.5">2.5</option>
+                                <option value="3" selected="selected">3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="checkButton" type="submit"> Проверить </button>
+                </form>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

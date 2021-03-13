@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+    font-size: 10px;
+    font-family: "fantasy", Arial, sans-serif;
+}
+
+button, input:focus {
+    outline: 0;
+}
+
+section {
+    overflow: hidden;
+    width: 100%;
+    height: 100vmax;
+    color: #fff;
+    background-color: cornflowerblue;
+    position: relative;
+    animation: changeBack 10s ease-in-out infinite;
+}
+
+.footerRect {
+    position: fixed;
+    text-align: center;
+    padding: 10px 10px 10px 21px;
+    margin-left: -150px;
+    top: 90%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    font-size: 18px;
+    font-family: Rockwell, sans-serif;
+}
+
+.baseInsideRect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    mix-blend-mode: hard-light;
+    padding: 30px 10px 10px 10px;
+    border-radius: 20px;
+    background-color: rgba(205, 205, 205, 0.6);
+    font-family: Rockwell, sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contentRect {
+    position: fixed;
+    text-align: left;
+    top: 55%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -10%;
+    width: 550px;
+    height: 370px;
+    mix-blend-mode: hard-light;
+    border-radius: 20px;
+    background-color: rgba(205, 205, 205, 0.6);
+}
+
+.baseInsideRect.actionTimeRect {
+    margin-left: -225px;
+    margin-top: -150px;
+    width: 215px;
+    height: 140px;
+}
+
+.baseInsideRect.currentTimeRect {
+    margin-left: -225px;
+    margin-top: 5px;
+    width: 215px;
+    height: 140px;
+}
+
+.baseInsideRect.xRect {
+    margin-left: 5px;
+    margin-top: -150px;
+    width: 60px;
+    height: 140px;
+}
+
+.baseInsideRect.yRect {
+    margin-left: 85px;
+    margin-top: -150px;;
+    width: 60px;
+    height: 140px;
+}
+
+.baseInsideRect.rRect {
+    margin-left: 165px;
+    margin-top: -150px;;
+    width: 60px;
+    height: 140px;
+}
+
+.baseInsideRect.resultRect {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 220px;
+    height: 140px;
+}
+
+p {
+    padding-top: 16px;
+}
+
+#dataTable,
+#tableBody > td {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+.tableHead {
+    overflow-y: auto;
+    height: 250px;
+    margin: -300px auto auto;
+    width: 452px;
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.tableHead thead th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(215, 215, 215);
+    background-blend-mode: hard-light;
+}
+
+
+/* Photos */
+.photo {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: transform .2s; /* Animation */
+    opacity: .3;
+    border: none;
+    cursor: pointer;
+}
+
+.photo.cross {
+    background-image: url("../Img/cross.png");
+    margin-left: 510px;
+    margin-top: 7px;
+}
+
+.photo.tableButton {
+    background-image: url("../Img/datatable.png");
+    margin-left: 510px;
+    margin-top: 290px;
+}
+
+.photo:hover {
+    opacity: .9;
+}

@@ -1,0 +1,135 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.header{
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(205, 205, 205, 0.6);
+    mix-blend-mode: hard-light;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+#headerText{
+    left: 32%;
+    top: 10%;
+    position: absolute;
+}
+
+.main {
+    position: fixed;
+    top: 40%;
+    left: 22%;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgba(205, 205, 205, 0.6);
+    mix-blend-mode: hard-light;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.buttonNumber {
+    width: 60px;
+    height: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.buttonNumber:hover{
+    background-color: darkgrey;
+}
+
+.xRect{
+    left: 40%;
+    position: fixed;
+}
+
+.yRect{
+    left: 35%;
+    position: absolute;
+    top: 40%;
+}
+
+.taskPhoto {
+    width: 250px;
+    height: 250px;
+}
+
+.selectContainer {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selectContainer select {
+    background-color: lightslategrey;
+    color: white;
+    padding: 12px;
+    width: 450px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    outline: none;
+}
+
+
+.selectContainer::before {
+    content: "\25be";
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+
+.selectContainer:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.selectContainer select option {
+    padding: 25px;
+}
+
+.checkButton {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    margin-left: 35%;
+    margin-top: 40%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+
+.checkButton:hover {
+    background-color: darkgrey;
+}
