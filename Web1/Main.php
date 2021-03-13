@@ -25,6 +25,7 @@ function checkData()
 
     if ($y < -3 || $y > 3 ||  !in_array($r, $r_values) ||  !in_array($x, $x_values)) {
         header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit;
     } else {
         $resultArray = array($x, $y, $r, checkSpotInArea());
         array_push($_SESSION['history'], $resultArray);
