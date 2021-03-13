@@ -23,7 +23,7 @@ function checkData()
     $x = $_GET['x'];
     $r = $_GET['select'];
 
-    if ($y < -3 || $y > 3 ||  !in_array($r, $r_values) ||  !in_array($x, $x_values)) {
+    if ($y < -3 || $y > 3 ||  !in_array($r, $r_values) ||  !in_array($x, $x_values ) || !is_numeric($r) || !is_numeric($y) || !is_numeric($x)) {
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
     } else {
