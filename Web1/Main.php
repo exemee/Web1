@@ -109,6 +109,7 @@ $time_elapsed_secs = number_format((microtime(true) - $_SERVER["REQUEST_TIME_FLO
 
                                 }
 
+                                setTimeout(setTime, 1);
                             </script>
                         </div>
 
